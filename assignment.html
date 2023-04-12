@@ -1,0 +1,212 @@
+<html>
+<head>
+  <link rel ="stylesheet" type="text/css" href="assignment.css">
+<title></title>
+
+<body>
+<header class="header-area">
+  <!-- site-navbar start -->
+  <div class="navbar-area">
+    <div class="container">
+      <nav class="site-navbar">
+        <!-- site logo -->
+        <a href="#home" class="site-logo">SHADOW</a>
+
+        <!-- site menu/nav -->
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">service</a></li>
+          <li><a href="contactform.html">contact</a></li>
+        </ul>
+
+        <!-- nav-toggler for mobile version only -->
+        <button class="nav-toggler">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </div><!-- navbar-area end -->
+
+  <div class="intro-area">
+    <div class="container">
+      <h2>WELCOME TO THE SHADOW SOLUTIONS</h2>
+      <p></p>
+    </div>
+  </div>
+</header>
+
+<section class="we-offer-area text-center bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading text-center">
+                        <h2>&nbsp OUR <span>SERVICES</span></h2>
+                        <h4>SOLUTION WITH INNOVATION</h4>
+                    </div>
+                </div>
+            </div>
+                <div class="row our-offer-items less-carousel">
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-pen-fancy"></i>
+                            <h4>PROJECT CREATION</h4>
+                            <p>
+                                Our project creation service is designed to help our clients turn their ideas into reality. We work closely with you to understand your goals and objectives, and then develop a custom project plan that meets your specific needs. Our team of experienced professionals has the skills and expertise to manage every aspect of your project, from initial concept to final delivery. We use industry-leading tools and technologies to ensure that your project is completed on time, within budget, and to the highest quality standards. Whether you're looking to launch a new product, build a new system, or implement a new process, our project creation service can help you achieve your goals and drive your business forward. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-dharmachakra"></i>
+                            <h4>SOFTWARE DEVELOPMENT</h4>
+                            <p>
+                                Our software development service is designed to help our clients build custom software solutions that meet their specific needs. We have a team of experienced software developers who use cutting-edge technologies to create software applications that are efficient, reliable, and scalable. Our software development process includes a thorough analysis of your requirements, design and development, testing, deployment, and ongoing maintenance and support. We specialize in a range of software development technologies, including web and mobile app development, enterprise software development, and custom integrations. Whether you need to build a new software application from scratch or enhance an existing one, our software development service can help you achieve your business objectives and stay ahead of the competition.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-tasks"></i>
+                            <h4>DIGITAL MARKETING</h4>
+                            <p>
+                                Our digital marketing service is designed to help our clients achieve their business goals through effective online marketing strategies. We provide a full suite of digital marketing services, including search engine optimization (SEO), pay-per-click (PPC) advertising, social media marketing, email marketing, content marketing, and analytics and reporting. Our team of digital marketing experts has a proven track record of delivering measurable results for our clients. We work closely with you to understand your business goals, target audience, and competitive landscape, and then develop a customized digital marketing plan that fits your budget and timeline. Our digital marketing strategies are designed to increase your online visibility, drive traffic to your website, and convert leads into customers. Whether you're looking to increase brand awareness, generate more leads, or drive sales, our digital marketing service can help you achieve your business objectives and stay ahead of the competition.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h4>WEBSITE DEVELOPMENT</h4>
+                            <p>
+                               Our website development service is designed to help our clients create professional, responsive, and user-friendly websites that drive business results. We work closely with you to understand your business objectives, target audience, and branding requirements, and then develop a custom website design and development plan that meets your specific needs. Our team of website developers has the expertise to build websites that are optimized for search engines, load quickly, and provide a seamless user experience across all devices. We use the latest web development technologies, including HTML5, CSS3, JavaScript, and PHP, to create dynamic and interactive websites that engage and convert visitors. Our website development process includes design and development, testing, deployment, and ongoing maintenance and support. We also provide website hosting and security services to ensure that your website is fast, secure, and always up-to-date. Whether you're looking to build a new website from scratch or redesign an existing one, our website development service can help you achieve your business objectives and drive growth.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+<script type="text/javascript">
+  // define all UI variable
+const navToggler = document.querySelector('.nav-toggler');
+const navMenu = document.querySelector('.site-navbar ul');
+const navLinks = document.querySelectorAll('.site-navbar a');
+
+// load all event listners
+allEventListners();
+
+// functions of all event listners
+function allEventListners() {
+  // toggler icon click event
+  navToggler.addEventListener('click', togglerClick);
+  // nav links click event
+  navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
+}
+
+// togglerClick function
+function togglerClick() {
+  navToggler.classList.toggle('toggler-open');
+  navMenu.classList.toggle('open');
+}
+
+// navLinkClick function
+function navLinkClick() {
+  if(navMenu.classList.contains('open')) {
+    navToggler.click();
+  }
+}
+</script>
+
+<!-- Footer Start -->
+<div class="footer">
+  <div class="container">
+    <div class="newsletter">
+      <h2>Contact Us</h2>
+      <div class="form">
+        <input class="form-control" placeholder="Email here">
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>
+            Shadow Company is a full-service digital agency that offers a range of services to help businesses grow and succeed in the digital landscape. Our team of experts has years of experience in their respective fields, allowing us to deliver innovative and effective solutions that drive results for our clients.
+            Our services include project creation, software development, digital marketing, and website development. We work closely with our clients to understand their unique needs and business objectives, and then develop customized solutions that fit their specific requirements. Our goal is to help our clients achieve their goals and grow their business through a comprehensive range of digital services.
+
+At Shadow Company, we pride ourselves on our commitment to quality, innovation, and customer satisfaction. We use the latest technologies and best practices to deliver cutting-edge solutions that meet the highest standards of quality and performance. Whether you're a small business or a large enterprise, we have the skills, expertise, and experience to help you succeed in the digital world.
+
+Our mission is to provide our clients with the best possible service and support, and to help them achieve their goals and grow their business through effective digital strategies. We believe in building long-term relationships with our clients, based on trust, integrity, and mutual success.
+
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-8">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-link">
+              <h3>Service Area</h3>
+              <a href="">Website Development</a>
+              <a href="">Digital Marketing </a>
+              <a href="">Software Development</a>
+              <a href="">Project Creation</a>
+             
+            </div>
+          </div>
+    
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-contact">
+              <h3>Get In Touch</h3>
+              <p><i class="fa fa-map-marker-alt"></i>Bhopal, Madhya Pradesh</p>
+              <p><i class="fa fa-phone-alt"></i>07592-465678</p>
+              <p><i class="fa fa-envelope"></i>shadow09.com</p>
+              <div class="footer-social">
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-menu">
+    <div class="f-menu">
+      <a href="">Terms of use</a>
+      <a href="">Privacy policy</a>
+      <a href="">Cookies</a>
+      <a href="">Help</a>
+      <a href="">FQAs</a>
+    </div>
+  </div>
+  <div class="container copyright">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; <a href="#">Rochit Dubey</a>, All Right Reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <p>Designed By Rochit Dubey</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
